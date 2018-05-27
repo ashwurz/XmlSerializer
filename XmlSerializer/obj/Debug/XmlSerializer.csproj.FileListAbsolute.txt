@@ -1,0 +1,7 @@
+C:\Users\Helmuth\source\repos\XmlSerializer\XmlSerializer\obj\Debug\XmlSerializer.csprojAssemblyReference.cache
+C:\Users\Helmuth\source\repos\XmlSerializer\XmlSerializer\obj\Debug\XmlSerializer.csproj.CoreCompileInputs.cache
+C:\Users\Helmuth\source\repos\XmlSerializer\XmlSerializer\bin\Debug\XmlSerializer.exe.config
+C:\Users\Helmuth\source\repos\XmlSerializer\XmlSerializer\bin\Debug\XmlSerializer.exe
+C:\Users\Helmuth\source\repos\XmlSerializer\XmlSerializer\bin\Debug\XmlSerializer.pdb
+C:\Users\Helmuth\source\repos\XmlSerializer\XmlSerializer\obj\Debug\XmlSerializer.exe
+C:\Users\Helmuth\source\repos\XmlSerializer\XmlSerializer\obj\Debug\XmlSerializer.pdb
