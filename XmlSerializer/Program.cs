@@ -21,26 +21,11 @@ namespace Application_Test
                 List<Perfil> listaExemplo = new List<Perfil>();
                 List<Field> campos = new List<Field>();
 
-                campos.Add(new Field { Id = 1, FielDoc = "ioquhduiqwh", FieldThe = "qiowjdoiqwjd" });
-                campos.Add(new Field { Id = 2, FielDoc = "qiodqwd", FieldThe = "apjisjaiojd" });
+                campos.Add(new Field { Id = 1, FielDoc = "teste", FieldThe = "teste2" });
 
-                Perfil teste = new Perfil { Id = 123, Categoria = "Felicidade", NomePerfil = "Helmuth", Caminho = "CAMINHO", Fields = campos };
-
-                campos = new List<Field>();
-                campos.Add(new Field { Id = 1, FielDoc = "iurhuite", FieldThe = "mkvbmnbvmv" });
-                campos.Add(new Field { Id = 2, FielDoc = "llwlwlwl", FieldThe = "nmcnvnvn" });
-
-                Perfil teste2 = new Perfil { Id = 145, Categoria = "teste", NomePerfil = "Digoo", Caminho = "CAMINHO2", Fields = campos };
-
-                campos = new List<Field>();
-                campos.Add(new Field { Id = 1, FielDoc = "nbmvbmbnasd", FieldThe = "nbvxcbvnxvb" });
-                campos.Add(new Field { Id = 2, FielDoc = "iuwieruiweur", FieldThe = "vbknOAISJOQFJ" });
-
-                Perfil teste3 = new Perfil { Id = 356, Categoria = "testeDiogo", NomePerfil = "Vitor", Caminho = "CAMINHO3", Fields = campos };
+                Perfil teste = new Perfil { Id = 123, Categoria = "teste1", NomePerfil = "teste2", Caminho = "teste3", Fields = campos };
 
                 listaExemplo.Add(teste);
-                listaExemplo.Add(teste2);
-                listaExemplo.Add(teste3);
 
                 Serialize(listaExemplo);
                 listaExemplo = Deserialize();
@@ -57,7 +42,7 @@ namespace Application_Test
         static void Serialize(List<Perfil> listaExemplo)
         {
             XmlSerializer x = new XmlSerializer(listaExemplo.GetType());
-            TextWriter textWriter = new StreamWriter(@"C:\Users\Helmuth\Desktop\input.xml");
+            TextWriter textWriter = new StreamWriter(@"path");
             x.Serialize(textWriter, listaExemplo);
             textWriter.Close();
         }
@@ -65,7 +50,7 @@ namespace Application_Test
         static List<Perfil> Deserialize()
         {
             XmlSerializer y = new XmlSerializer(typeof(List<Perfil>));
-            TextReader textReader = new StreamReader(@"C:\Users\Helmuth\Desktop\input.xml");
+            TextReader textReader = new StreamReader(@"path");
             List<Perfil> lista;
             lista = (List<Perfil>)y.Deserialize(textReader);
             textReader.Close();
